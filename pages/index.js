@@ -1,4 +1,5 @@
-import styles from '../styles/Home.module.css';
+import React, { useMemo, useCallback, useState } from 'react';
+
 import MyHeavyComponent from './components/MyHeavyComponent';
 
 /**
@@ -8,13 +9,13 @@ import MyHeavyComponent from './components/MyHeavyComponent';
  * 4. React.memo -> pure component 
  * 5. Preserved references
  * 6. useCallback for MemoizedSubComponent
- * 6. When to use these hooks
+ * 7. When to use these hooks
  */
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <MyHeavyComponent />
-    </div>
-  )
+	return (
+		<div>
+			<MyHeavyComponent />
+		</div>
+	);
 }

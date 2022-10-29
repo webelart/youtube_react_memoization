@@ -1,22 +1,16 @@
 .heavyComponent {
-    padding: 2rem 1rem;
-
-    &__Label {
-        margin-bottom: 1rem;
-        display: block;
+    padding: 2rem;
+    height: 100vh;
+    box-sizing: border-box;
+    
+    &Black {
+      color: white;
+      background: black;
     }
+}
 
-    &__Input {
-        padding: 10px;
-        font-size: 1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    }
-
-    &__Error {
-        color: red;
-    }
-
-    &__Result {
-        font-weight: bold;
-    }
+.button {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
